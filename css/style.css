@@ -469,7 +469,7 @@ body{
 	display:block;
 	color:#fff;
 	font-size: 1em;
-	text-transform:capitalize;
+	/*text-transform:capitalize;*/
 	margin-right: 30PX;	
 }
 .f_nav5 li p > i{
@@ -488,7 +488,7 @@ body{
 	display:block;
 	color:#fff;
 	font-size: 1em;
-	text-transform:capitalize;
+	/*text-transform:capitalize;*/
 	margin-right: 30PX;	
 }
 .f_nav5 a.a:hover{

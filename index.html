@@ -28,6 +28,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				thumbnails: true
 			});
 		});
+
+		jQuery(document).ready(function(){
+        	jQuery('#hideshow').on('click', function(event) {        
+            	 jQuery('#content1').toggle('show');
+            	 jQuery('#content2').toggle('show');
+            	 jQuery('#content3').toggle('show');
+            	 jQuery('#content4').toggle('show');
+
+            	 event.preventDefault();
+        });
+
+        
+
+        
+    });
 	</script>
 <!-- end slider -->
 </head>
@@ -107,7 +122,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 	  <div class="top-bg">
 	 	  <div class="wrap">
 		 	  <div class="top-cont">
+		 	  	<div id='content1'>
 		          <h2>We decided to explore the self by reflecting on the experiences of others.</h2>
+		      </div>
 		         <div class="fnav_1">
 		         	<!--
 						<ul>
@@ -118,9 +135,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					-->
 						<div class="clear"></div>
 				   </div> 
-				   <div class="clear">   		
-		          <p>We get so deeply entrenched in our own worldview that sometimes it is difficult to see outside it. We have plenty of ideas about what the self might look like, but  </p>
-			      <h6><a href=".html">READ MORE</a></h6>
+				   <!-- Form for hiding function
+				   <div id='content'>Hello World</div>
+				   <input type='button' id='hideshow' value='hide/show'>
+					-->
+				   <div class="clear" id='content2'>   		
+		          <p></br>INTRODUCTION: </br></br>We can get so deeply entrenched in our own worldview that it is difficult to see beyond it. We already have plenty of ideas about what the self might look like, but its hard to see a new perspective unless you go out and ask. So Cory took to the streets in search of new perspectives from strangers. He talked to three people, a Navajo flute player, a mother with her children who we will call "Alice", and a lady on a park bench who said she was terminally ill and trying to get home. We think we have learned a great deal from them, and hopefully you will too. </br> </br>In the interests of creating a more robust dialogue, we will begin by considering our notions of self at the beginning of this experiment. Both Jason and Cory come from quite similar backgrounds, we are both white males who are in their senior year at CU Boulder. </p>
+			      <h6 input type='button' id='hideshow' value='hide/show'><a href="#">READ REFLECTION</a></h6>
+			  </div>
+			  <div id='content3' style='display:none'>
+		          <h2>We realized that things aren't what we thought.</h2>
+		      </div>
+			  <div class="clear" id='content4' style='display:none'>   		
+		          <p></br>REFLECTION:</br></br>Neither Cody nor Jason have any experience of oppression that compares with that of Leaf-In-The-Wind, nor do we have children and families of our own to understand the perspective of "Alice", and we still have many years in our life which makes Cheryl's perspective distant from our own. </p>
+
+			      <!-- <h6 input type='button' id='hideshow' value='hide/show'><a href="#">READ INTRO</a></h6> -->
 			  </div>
 			  </div> 
 	   </div>
